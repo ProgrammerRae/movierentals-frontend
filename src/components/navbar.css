@@ -1,0 +1,38 @@
+.nav-bar {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--background);
+    color: var(--text);
+    padding: 10px;
+    border-bottom: 1px solid var(--secondary);
+
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navigation :is(a){
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text);
+}
+
+.navigation a:hover {
+    border-bottom: 2px solid var(--accent);
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.options :is(button){
+    width: 20px;
+    height: 20px;
+    margin-right: 8%;
+}
